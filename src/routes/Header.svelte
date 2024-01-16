@@ -1,14 +1,13 @@
 <script>
 	import { page } from '$app/stores';
 	import logo from '$lib/images/svelte-logo.svg';
-	import github from '$lib/images/github.svg';
 </script>
 
 <header>
 	<div class="corner">
-		<a href="https://kit.svelte.dev">
+		<span>
 			<img src={logo} alt="SvelteKit" />
-		</a>
+		</span>
 	</div>
 
 	<nav>
@@ -17,10 +16,10 @@
 		</svg>
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Intro</a>
+				<a href="/">Terug</a>
 			</li>
-			<li aria-current={$page.url.pathname === '/afbeelding' ? 'page' : undefined}>
-				<a href="/afbeelding">Afbeelding</a>
+			<li aria-current={$page.url.pathname === '/opdracht-1' ? 'page' : undefined}>
+				<a href="/opdracht-1">1</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
@@ -40,7 +39,7 @@
 		height: 3em;
 	}
 
-	.corner a {
+	.corner span {
 		display: flex;
 		align-items: center;
 		justify-content: center;
