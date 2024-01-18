@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 </script>
 
 <svelte:head>
@@ -7,7 +8,7 @@
 </svelte:head>
 
 <section>
-	<a href="/opdracht-1">Opdracht 1</a>
+	<a href="{base}/opdracht-1">Opdracht 1</a>
 </section>
 
 <style>
