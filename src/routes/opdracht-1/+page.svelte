@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { GridData } from '../utils';
+	import { GridData } from './utils';
 	import Grid from './Grid.svelte';
 	import { writable } from 'svelte/store';
-	import { house } from '../images';
+	import { house } from './images';
 
 	const size = 11;
 	let digits = writable(new GridData(size));

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte';
-	import type { GridData } from '../utils';
+	import type { GridData } from './utils';
 
 	const dispatch = createEventDispatcher();
 	export let digits: GridData;
