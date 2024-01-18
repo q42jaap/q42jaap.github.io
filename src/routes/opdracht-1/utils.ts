@@ -29,7 +29,12 @@ export class GridData {
 
 	static fromString(str: string): GridData {
 		const size = Math.sqrt(str.length);
+		return GridData.parse(str, size);
+	}
+
+	static parse(str: string, size: number): GridData {
 		const grid = new GridData(size);
+		str = str.substring(0, size * size);
 		for (let i = 0; i < str.length; i++) {
 			if (str[i] === '1') {
 				grid.toggle({ x: i % size, y: Math.floor(i / size) });

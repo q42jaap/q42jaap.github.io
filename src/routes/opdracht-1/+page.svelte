@@ -2,7 +2,7 @@
 	import { GridData } from './utils';
 	import Grid from './Grid.svelte';
 	import { writable } from 'svelte/store';
-	import { house } from './images';
+	import { diy, empty, hart, house, konijn, zon } from './images';
 
 	const size = 11;
 	let digits = writable(new GridData(size));
@@ -38,8 +38,12 @@
 	</div>
 	<h2>&nbsp;</h2>
 	<div>
-		<button on:click={() => digits.set(new GridData(size))}>Opnieuw</button>
+		<button on:click={() => digits.set(empty())}>Opnieuw</button>
 		<button on:click={() => digits.set(house())}>Huisje</button>
+		<button on:click={() => digits.set(konijn())}>Konijn</button>
+		<button on:click={() => digits.set(zon())}>Zon</button>
+		<button on:click={() => digits.set(hart())}>Hartje</button>
+		<button on:click={() => digits.set(diy())}>110101101</button>
 	</div>
 </section>
 
