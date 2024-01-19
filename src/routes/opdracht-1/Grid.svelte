@@ -2,25 +2,19 @@
 	import { createEventDispatcher } from 'svelte';
 	import type { GridData } from './utils';
 
-	const dispatch = createEventDispatcher();
 	export let digits: GridData;
 
-	function onMouseDown(x: number, y: number) {
+	const dispatch = createEventDispatcher();
+	function onClick(x: number, y: number) {
 		dispatch('click', { x, y });
 	}
-
-	function onMouseEnter() {}
 </script>
 
 <table class="digits">
 	{#each Array(digits.size) as _, y (y)}
 		<tr>
 			{#each Array(digits.size) as _, x (x)}
-				<td
-					class="digit"
-					class:active={digits.get(x, y) === 1}
-					on:mousedown={() => onMouseDown(x, y)}
-				></td>
+				<td class="digit" class:active={digits.get(x, y) === 1} on:click={() => onClick(x, y)}></td>
 			{/each}
 		</tr>
 	{/each}

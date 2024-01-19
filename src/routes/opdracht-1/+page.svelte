@@ -6,16 +6,6 @@
 
 	const size = 11;
 	let digits = writable(new GridData(size));
-
-	const emptyStr = new GridData(size).toString();
-
-	let digitStr = '';
-
-	function parse(evt: { currentTarget: HTMLInputElement }) {
-		let str = evt.currentTarget.value;
-		str = (str + emptyStr).substring(0, emptyStr.length);
-		digits.set(GridData.fromString(str));
-	}
 </script>
 
 <svelte:head>

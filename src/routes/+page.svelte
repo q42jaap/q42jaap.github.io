@@ -7,8 +7,13 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section>
-	<a href="{base}/opdracht-1">Opdracht 1</a>
+<section class="text-column">
+	<div>
+		<a href="{base}/opdracht-1">Opdracht 1</a>
+	</div>
+	<div>
+		<a href="{base}/opdracht-2">Opdracht 2</a>
+	</div>
 </section>
 
 <style>
