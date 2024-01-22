@@ -6,9 +6,10 @@
 
 	export let kandidaat: Candidate;
 	export let selected: boolean;
+	export let red = false;
 </script>
 
-<button class="candidate" class:selected on:click={() => dispatch('click')}>
+<button class="candidate" class:selected on:click={() => dispatch('click')} class:red>
 	<img src={kandidaat.img} alt={kandidaat.naam} class="candidate-image" />
 	<span>{kandidaat.naam}</span>
 </button>
@@ -29,7 +30,12 @@
 		outline: inherit;
 
 		&.selected {
-			background-color: #26b973;
+			color: white;
+			background-color: #007045;
+
+			&.red {
+				background-color: #bf352b;
+			}
 		}
 
 		& .candidate-image {

@@ -67,7 +67,7 @@
 </svelte:head>
 
 <section class="text-column">
-	<h1>Opdracht 2: Wie is de Mol verdenkspel</h1>
+	<h1>Opdracht 2: Punten inzetten</h1>
 	<p>In de app kan je punten inzetten op de kandidaat die je het meest verdacht vindt.</p>
 	<h2>Wie verdenk jij?</h2>
 	<div class="candidates-box">

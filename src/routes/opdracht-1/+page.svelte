@@ -13,7 +13,7 @@
 </svelte:head>
 
 <section class="text-column">
-	<h1>Opdracht 1: Maak een afbeelding</h1>
+	<h1>Opdracht 1: Maak een afbeelding met 0 en 1</h1>
 	<h2>De computer ziet dit</h2>
 	<!--	<input class="digits-lint" value={digitStr} on:input={parse} />-->
 	{$digits.toString()}
@@ -26,13 +26,20 @@
 			}}
 		/>
 	</div>
-	<h2>&nbsp;</h2>
 	<div>
+		<br />
 		<button on:click={() => digits.set(empty())}>Opnieuw</button>
-		<button on:click={() => digits.set(house())}>Huisje</button>
+	</div>
+	<h2>Kies een plaatje</h2>
+	<div>
+		<button on:click={() => digits.set(house())}>Huis</button>
 		<button on:click={() => digits.set(konijn())}>Konijn</button>
 		<button on:click={() => digits.set(zon())}>Zon</button>
-		<button on:click={() => digits.set(hart())}>Hartje</button>
+		<button on:click={() => digits.set(hart())}>Hart</button>
+	</div>
+
+	<h2>Kan jij een afbeelding maken met 1 en 0?</h2>
+	<div>
 		<button on:click={() => digits.set(diy())}>110101101</button>
 	</div>
 </section>
