@@ -13,7 +13,7 @@
 </svelte:head>
 
 <section class="text-column">
-	<h1>Afbeelding</h1>
+	<h1>Opdracht 1: Maak een afbeelding</h1>
 	<h2>De computer ziet dit</h2>
 	<!--	<input class="digits-lint" value={digitStr} on:input={parse} />-->
 	{$digits.toString()}
