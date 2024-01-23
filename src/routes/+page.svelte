@@ -17,6 +17,9 @@
 	<div>
 		<a href="{base}/opdracht-3">Opdracht 3</a>
 	</div>
+	<div>
+		<a href="{base}/opdracht-4">Opdracht 4</a>
+	</div>
 </section>
 
 <style>

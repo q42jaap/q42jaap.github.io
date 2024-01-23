@@ -63,8 +63,10 @@ export class Calc {
 		try {
 			const result = Function(`score=-1
 with(this.scope) {
+	console.log(anna);
   ${programma}
 }; return score`).bind(that)();
+			console.log('result', result);
 			return {
 				score: result,
 				correct: result === this.realCalculate()
