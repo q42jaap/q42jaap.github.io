@@ -14,7 +14,6 @@ export class GridData {
 	}
 
 	toggle({ x, y }: { x: number; y: number }): GridData {
-		console.log('toggle');
 		this.digits[y][x] = this.digits[y][x] === 0 ? 1 : 0;
 		return this;
 	}

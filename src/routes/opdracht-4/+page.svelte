@@ -141,9 +141,8 @@ if (rian != afvaller) {
 				if (confirm('Weet je het zeker?')) {
 					programma = startProgramma;
 				}
-			}}
-			>Opnieuw
-		</button>
+			}}>Opnieuw</button
+		>
 	</p>
 
 	{#if calcResult?.score !== undefined}

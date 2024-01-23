@@ -24,6 +24,5 @@ export const hart = () =>
 
 export const diy = () => {
 	const str = prompt('Type een aantal 1 en 0');
-	console.log({ str });
 	return GridData.parse(str ?? '', 11);
 };
