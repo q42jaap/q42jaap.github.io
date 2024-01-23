@@ -164,6 +164,7 @@ if (rian != afvaller) {
 		<p>&nbsp;</p>
 		<p>&nbsp;</p>
 		<button
+			style="background-color: transparent"
 			on:mouseover={() => (eyePressed = true)}
 			on:focus={() => (eyePressed = true)}
 			on:mouseleave={() => (eyePressed = false)}
