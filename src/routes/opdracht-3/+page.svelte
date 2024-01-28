@@ -101,7 +101,7 @@
 				</div>
 			{:else if scoreGetoond === scoreGok}
 				<p>Goed zo!</p>
-				<button on:click={() => (stap = 2)}>Volgende</button>
+				<button on:click={() => (stap = 0)}>Opnieuw</button>
 			{:else}
 				<p>Helaas, dat is niet goed.</p>
 				{#if $calc.isAfvaller('C')}
@@ -117,7 +117,7 @@
 					<p>Kees is afgevallen, de ingezette punten voor Anna en Jip worden verdubbeld.</p>
 				{/if}
 				<p>De goede score moest zijn: {scoreGetoond}</p>
-				<button on:click={() => (stap = 2)}>Volgende</button>
+				<button on:click={() => (stap = 0)}>Opnieuw</button>
 			{/if}
 		</div>
 	{/if}
