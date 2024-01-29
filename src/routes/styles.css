@@ -104,6 +104,9 @@ button {
     &:active {
         background-color: rgba(255, 62, 0, 1);
     }
+    &:disabled {
+        background-color: darkgrey;
+    }
 }
 
 @media (min-width: 720px) {
